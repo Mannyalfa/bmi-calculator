@@ -18,7 +18,7 @@ body {
 h1 {
     font-size: 2.4rem;
     text-decoration: underline;
-    color: blue;
+    color:black;
 }
 
 label {
@@ -42,7 +42,7 @@ span {
 
 #submit {
     margin-top: 1rem;
-    background-color: blue;
+    background-color: black;
     font-weight: 800;
     color: white;
     border: 0px;
