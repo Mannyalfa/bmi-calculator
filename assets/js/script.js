@@ -7,7 +7,7 @@ function BMICalc() {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
             "Your BMI is " + bmi + ": Underweight";
-        document.getElementById("msgbox").style.color = "gold";
+        document.getElementById("msgbox").style.color = "gray";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
@@ -18,10 +18,15 @@ function BMICalc() {
         document.getElementById("msgbox").innerHTML =
             "Your BMI is " + bmi + ": Overweight";
         document.getElementById("msgbox").style.color = "brown";
-    } else {
+    } else if (bmi >= 29.9 && bmi < 39.9) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
             "Your BMI is " + bmi + ": Obese";
+        document.getElementById("msgbox").style.color = "maroon";
+    } else {
+        document.getElementById("bmibox").innerHTML = bmi;
+        document.getElementById("msgbox").innerHTML =
+            "Your BMI is " + bmi + ": Extremely Obese";
         document.getElementById("msgbox").style.color = "red";
     }
 }
