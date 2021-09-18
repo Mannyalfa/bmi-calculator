@@ -10,8 +10,9 @@ body {
 }
 
 #msgbox {
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 h1 {
