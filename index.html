@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +15,29 @@
 
 <body>
     <element hidden id="bmibox"></element>
-    <h1>Body Mass Index Calculator</h1>
     <div id="msgbox"></div>
-    <label for="">Enter Your Height <span>(in inches)</span> </label>
+    <h1>Body Mass Index Calculator</h1>
+    <label for="">Enter Height <span>(inches)</span> </label>
     <br>
     <input type="number" name="" id="height">
     <br>
-    <label for="">Enter Your Weight <span>(in pounds)</span> </label>
+    <label for="">Enter Weight <span>(pounds)</span> </label>
     <br>
     <input type="number" name="" id="weight">
     <br>
 
-    <input type="submit" value="Check Result" id="submit" onclick="BMICalc()">
+    <input type="button" value="See Results" id="submit" onclick="BMICalc()">
     <br>
     <br>
-    <p>NOTE: Calculations are only estimates and are not an official diagnosis.
+    <input type="button" value="Clear Fields" id="resetForm" onclick="reset()">
+    <br>
+    <br>
+    <p><strong>NOTE: </strong>Calculations are only estimates and are not an official diagnosis.
         Consult with a medical professional for further information.
     </p>
+    <p id="standards">*Body Mass Index (BMI) classifications and percentage thresholds are based on standards set by the
+        U.S. Department of
+        Health & Human Services.</p>
 </body>
 <script src="./assets/js/script.js"></script>
 

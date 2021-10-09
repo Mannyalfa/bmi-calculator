@@ -10,15 +10,13 @@ body {
 }
 
 #msgbox {
-    font-size: 1.2rem;
     font-weight: 700;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 h1 {
     font-size: 2.4rem;
-    text-decoration: underline;
-    color:black;
+    color: blue;
 }
 
 label {
@@ -41,12 +39,27 @@ span {
 }
 
 #submit {
-    margin-top: 1rem;
-    background-color: black;
+    margin-top: 1rem; 
+    background-color: blue;
     font-weight: 800;
     color: white;
     border: 0px;
     cursor: pointer;
     padding: .4rem;
     border-radius: 4px;
+}
+
+#resetForm {
+    /* margin-top: 1rem; */
+    background-color: red;
+    font-weight: 800;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    padding: .4rem;
+    border-radius: 4px;
+}
+
+#standards {
+    font-size: small;
 }

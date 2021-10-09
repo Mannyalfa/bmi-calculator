@@ -6,27 +6,35 @@ function BMICalc() {
     if (bmi < 18.5) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
-            "Your BMI is " + bmi + ": Underweight";
-        document.getElementById("msgbox").style.color = "gray";
+            "Your BMI is " + bmi + ". Category: Underweight*";
+        document.getElementById("msgbox").style.color = "gold";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
-            "Your BMI is " + bmi + ": Normal range";
+            "Your BMI is " + bmi + ". Category: Normal Range*";
         document.getElementById("msgbox").style.color = "green";
     } else if (bmi >= 25 && bmi < 29.9) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
-            "Your BMI is " + bmi + ": Overweight";
+            "Your BMI is " + bmi + ". Category: Overweight*";
         document.getElementById("msgbox").style.color = "brown";
-    } else if (bmi >= 29.9 && bmi < 39.9) {
+    } else if (bmi >= 30 && bmi < 34.9) {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
-            "Your BMI is " + bmi + ": Obese";
+            "Your BMI is " + bmi + ". Category: Obese*";
         document.getElementById("msgbox").style.color = "maroon";
     } else {
         document.getElementById("bmibox").innerHTML = bmi;
         document.getElementById("msgbox").innerHTML =
-            "Your BMI is " + bmi + ": Extremely Obese";
+            "Your BMI is " + bmi + ". Category: Extremely Obese*";
         document.getElementById("msgbox").style.color = "red";
     }
+}
+
+function reset() {
+    document.getElementById("height").value="";
+    document.getElementById("weight").value="";
+    document.getElementById("bmibox").value="";
+    document.getElementById("msgbox").value="";
+
 }
