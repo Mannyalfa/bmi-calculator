@@ -34,7 +34,7 @@ function BMICalc() {
 function reset() {
     document.getElementById("height").value="";
     document.getElementById("weight").value="";
-    document.getElementById("bmibox").value="";
-    document.getElementById("msgbox").value="";
+    document.getElementById("bmibox").innerHTML="";
+    document.getElementById("msgbox").innerHTML="";
 
 }
